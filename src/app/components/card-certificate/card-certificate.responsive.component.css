@@ -1,0 +1,10 @@
+@media screen and (max-width: 900px) {
+  .title>h2 {
+    width: 100%;
+    font-size: 55px;
+  }
+
+  .card>img {
+    width: 100%;
+  }
+}

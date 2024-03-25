@@ -1,0 +1,43 @@
+.conteiner__card-about-me{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #191919;
+  display: flex;
+  justify-content: center;
+}
+.card-about__photo>img{
+  height: auto;
+	width: 430px;
+  margin-right: 60px;
+}
+.card-about__description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-about__description>.about-text{
+  width: 550px;
+}
+.card-about__description>.about-text h2 {
+	color: white;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+
+.card-about__description>.about-text h5 {
+	color: white;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+
+.card-about__description>.about-text p {
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+  text-align: justify;
+}

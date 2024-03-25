@@ -1,0 +1,86 @@
+<section id="certificate" class="conteiner__card-certificate">
+  <div class="title">
+    <h2>
+      <i class="bi bi-patch-check"></i>
+      Principais Certificados
+    </h2>
+  </div>
+
+  <div class="box">
+    <div class="card">
+      <img
+        id="certificado"
+        src="https://hermes.digitalinnovation.one/certificates/cover/547BF37A.jpg"
+        alt="Certificado Desenvolvimento Frontend com Angular"
+      />
+      <h5>Desenvolvimento Frontend com Angular</h5>
+      <div class="pra" [class.praBancoPanClass]="showPan">
+        <p>
+          O bootcamp "Coding The Future Banco PAN - Desenvolvimento Frontend com
+          Angular" oferece uma oportunidade de aprimoramento em habilidades
+          práticas para construir aplicações web modernas e responsivas, além de
+          treinamento em recursos de Inteligência Artificial. Com uma carga
+          horária de 68 horas, o programa aborda conceitos essenciais de
+          front-end, como componetização e o uso de SPA (Single Page
+          Application) para melhorar o desempenho e responsividade. Os
+          participantes terão a chance de desenvolver suas habilidades por meio
+          de projetos práticos, desafios de código e mentorias com especialistas
+          do Banco PAN. Ao final, estarão disponíveis na DIO Talent Match,
+          facilitando o acesso a oportunidades de recrutamento no Banco PAN para
+          os recrutadores de tecnologia.
+        </p>
+      </div>
+      <button class="read-more" (click)="show_more('pan')">
+        {{ bancoPanTxt }}
+      </button>
+    </div>
+
+    <div class="card">
+      <img
+        src="https://hermes.digitalinnovation.one/certificates/cover/85877E01.jpg"
+        alt="Print Projeto"
+      />
+      <h5>Potência Tech Angular Developer - Powered by iFood</h5>
+      <div class="pra" [class.praIfoodClass]="showIfood">
+        <p>
+          O Potência Tech, patrocinado pelo iFood, anunciou o retorno de seu
+          Bootcamp, agora com ênfase em Angular. O Bootcamp Potência Tech
+          Angular Developer - Powered by iFood oferece cursos, desafios de
+          projeto, desafios de código e mentorias exclusivas, proporcionando uma
+          experiência abrangente para quem busca iniciar uma carreira na área de
+          tecnologia. As inscrições estão abertas para participantes de todo o
+          Brasil, com foco especial em grupos sub-representados e pessoas de
+          baixa renda. O programa, que tem a duração de 75 horas, culminará no
+          evento Minha Carreira Tech, proporcionando oportunidades de interação
+          com empresas parceiras e visibilidade na plataforma de talentos da
+          DIO. Além disso, os participantes têm a chance de conquistar prêmios
+          com base em seu desempenho no programa.
+        </p>
+      </div>
+      <button class="read-more" (click)="show_more('iFood')">
+        {{ iFoodTxt }}
+      </button>
+    </div>
+
+    <div class="card">
+      <img
+        src="https://hermes.digitalinnovation.one/certificates/cover/2A3C26EA.jpg"
+        alt="Print Projeto"
+      />
+      <h5>Órbi Web Games Developer</h5>
+      <div class="pra">
+        <p>
+          O bootcamp Órbi Web Games Developer oferece um programa gratuito para
+          quem busca ingressar na carreira de desenvolvimento de jogos, uma das
+          áreas de tecnologia em maior expansão global. O curso de 63 horas
+          ensina as linguagens fundamentais para iniciar como desenvolvedor de
+          jogos e proporciona prática em projetos hands-on, contribuindo
+          diretamente para a construção do portfólio dos participantes.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="false" class="card-certificate__button">
+    <button class="button">Todos os meus certificado</button>
+  </div>
+</section>

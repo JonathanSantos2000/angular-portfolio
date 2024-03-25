@@ -1,0 +1,30 @@
+.conteiner__card-tech {
+  min-height: 600px;
+  background: #000;
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 300px;
+
+  & h1 {
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  & .card-tech__tool {
+    border-radius: 8px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    & app-tools {
+      padding-bottom: .5rem;
+      height: 100%;
+    }
+  }
+}

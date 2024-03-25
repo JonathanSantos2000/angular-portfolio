@@ -1,0 +1,32 @@
+@media screen and (max-width: 428px) {
+  .conteiner__card-tech {
+    & .card-tech__title {
+      & h1 {
+        font-size: 55px;
+      }
+    }
+
+    & .card-tech__tool {
+
+      grid-template-columns: 1fr;
+
+      & app-tools {
+        margin: .5rem 0;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .conteiner__card-tech {
+    height: auto;
+    & .card-tech__tool {
+      grid-template-columns: 1fr 1fr 1fr;
+
+      & app-tools {
+        margin: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+<section id="works" class="conteiner__card-works">
+  <div class="card-works__title">
+    <h2>Principais Web Projetos</h2>
+  </div>
+
+  <div
+    class="card-works"
+    [class.card-works__show-more]="showMoreConteiner"
+    [class.card-works__maridao]="showMoreMaridao && !showMoreConteiner"
+  >
+    <div class="card-works__box">
+      <div class="card-works__card">
+        <img src="../../../assets/IMG/Projeto_lista_de Leitura.jpg" alt="" />
+        <h5>Projeto lista de Leitura</h5>
+        <div class="pra">
+          <p>
+            Aplicação web responsiva utilizando PHP, CSS, Java Script e Banco de
+            Dados para criar uma plataforma de gerenciamento de livros, onde os
+            usuários podem organizar suas leituras de forma mais eficiente(WIP)
+          </p>
+          <p class="card-works__button">
+            <a
+              class="button"
+              href="https://github.com/JonathanSantos2000/Lista_de_leitura"
+              >GitHub
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="card-works__card">
+        <img src="../../../assets/IMG/Projeto_futebol_score.png" alt="" />
+        <h5>Projeto Futebol Score</h5>
+        <div class="pra">
+          <p>
+            O Match Point Status é um projeto web dedicado ao acompanhamento de
+            diversas ligas de futebol. Desenvolvido como uma demonstração das
+            minhas habilidades em PHP, CSS e JavaScript, o site utiliza a API
+            fornecida pelo .football-data.org para obter informações em tempo
+            quase sobre partidas, pontuações e estatísticas de jogadores.
+          </p>
+          <p class="card-works__button">
+            <a
+              class="button"
+              href="https://github.com/JonathanSantos2000/futebol_score"
+              >GitHub
+            </a>
+          </p>
+        </div>
+      </div>
+      <div
+        class="card-works__card"
+        [class.card-works__card-maridao]="showMoreMaridao"
+      >
+        <img src="../../../assets/IMG/Projeto_maridao_na_cozinha.png" alt="" />
+        <h5>Maridão na cozinha</h5>
+        <div class="pra">
+          <p [class.maridaoClass]="showMoreMaridao">
+            Desenvolvimento de um espaço online dedicado à culinária, com mais
+            de 300 receitas catalogadas e organizadas. <br />
+            Utilização de tecnologias como Angular e banco de dados NoSQL
+            MongoDB para construir um site responsivo e acessível em diferentes
+            dispositivos. <br />
+            Compromisso em oferecer uma fonte confiável de inspiração culinária,
+            com recursos como pesquisa avançada e dicas sobre técnicas de
+            cozimento. <br />
+            Empenho em proporcionar uma experiência completa aos usuários.
+            Preparação para o lançamento em breve, com espaço para sugestões e
+            ideias dos usuários.
+          </p>
+          <button class="read-more" (click)="show_more_maridao()">
+            {{ maridaoTxt }}
+          </button>
+          <p class="card-works__button">
+            <a
+              class="button"
+              href="https://github.com/JonathanSantos2000/maridao-na-cozinha"
+              >GitHub
+            </a>
+
+            <a
+              class="button"
+              href="https://maridao-na-cozinha.onrender.com/"
+              target="_blank"
+              >Deploy
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="card-works__card">
+        <img src="../../../assets/IMG/em_breve.png" alt="" />
+        <h5>Projeto #4</h5>
+        <div class="pra">
+          <p>Esperando seu Contato</p>
+          <p class="card-works__button">
+            <a class="button" href="#">GitHub </a>
+          </p>
+        </div>
+      </div>
+      <div class="card-works__card">
+        <img src="../../../assets/IMG/em_breve.png" alt="" />
+        <h5>Projeto #5</h5>
+        <div class="pra">
+          <p>Esperando seu Contato</p>
+          <p class="card-works__button">
+            <a class="button" href="#">GitHub </a>
+          </p>
+        </div>
+      </div>
+      <div class="card-works__card">
+        <img src="../../../assets/IMG/em_breve.png" alt="" />
+        <h5>Projeto #6</h5>
+        <div class="pra">
+          <p>Esperando seu Contato</p>
+          <p class="card-works__button">
+            <a class="button" href="#">GitHub </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-works__btn">
+    <button class="btn__show-more" (click)="show_more()">{{ btnShow }}</button>
+  </div>
+</section>
