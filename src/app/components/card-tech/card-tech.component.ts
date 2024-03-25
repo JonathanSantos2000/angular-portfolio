@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { ToolsComponent } from './tools/tools.component';
+import { ToolsComponent } from '../tools/tools.component';
 
 @Component({
   selector: 'app-card-tech',

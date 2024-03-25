@@ -13,8 +13,9 @@ import { Component, OnInit } from '@angular/core';
 export class BigCardComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  openPDF() {
+    window.open('../../../assets/curriculo/currículo.pdf', '_blank');
   }
-
-
 }

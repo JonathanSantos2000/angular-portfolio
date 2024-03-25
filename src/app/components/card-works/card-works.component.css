@@ -2,7 +2,7 @@
   background-color: #000;
   width: 100%;
 
-  padding-top: 100px;
+  padding: 100px 100px;
 
   & .card-works__title {
     & h2 {
@@ -16,7 +16,7 @@
 
   & .card-works {
     overflow: hidden;
-    height: 600px;
+    height: 650px;
     padding: 20px 40px;
 
     & .card-works__box {
@@ -24,7 +24,7 @@
       grid-template-columns: 1fr 1fr 1fr;
 
       & .card-works__card {
-        height: 557px;
+        height: 610px;
         margin: 10px 40px;
         padding: 20px 35px;
         background: #0d0c0c;
@@ -89,7 +89,7 @@
       }
 
       & .card-works__card-maridao {
-        height: 670px;
+        height: 800px;
       }
     }
   }
@@ -99,7 +99,7 @@
   }
 
   & .card-works__maridao {
-    height: 710px;
+    height: 850px;
   }
 
   & .card-works__btn {
