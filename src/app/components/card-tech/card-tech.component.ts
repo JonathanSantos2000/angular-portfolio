@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ToolsComponent } from '../tools/tools.component';
 
@@ -10,7 +9,7 @@ import { ToolsComponent } from '../tools/tools.component';
     './card-tech.component.css',
     './card-tech.responsive.component.css',
   ],
-  imports: [CommonModule, ToolsComponent],
+  imports: [ToolsComponent],
 })
 export class CardTechComponent implements OnInit {
   constructor() {}

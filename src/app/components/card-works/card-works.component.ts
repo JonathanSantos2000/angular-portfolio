@@ -1,16 +1,15 @@
-import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { TechComponent } from "../tech/tech.component";
-declare module 'tslib';
+import { TechComponent } from '../tech/tech.component';
+
 @Component({
-    selector: 'app-card-works',
-    standalone: true,
-    templateUrl: './card-works.component.html',
-    styleUrls: [
-        './card-works.component.css',
-        './card-works.responsive.component.css',
-    ],
-    imports: [CommonModule, TechComponent]
+  selector: 'app-card-works',
+  standalone: true,
+  templateUrl: './card-works.component.html',
+  styleUrls: [
+    './card-works.component.css',
+    './card-works.responsive.component.css',
+  ],
+  imports: [TechComponent],
 })
 export class CardWorksComponent implements OnInit {
   showMoreConteiner: boolean = false;
