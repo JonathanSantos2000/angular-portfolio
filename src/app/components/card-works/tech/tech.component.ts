@@ -6,12 +6,11 @@ import { Component, Input, OnInit } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './tech.component.html',
-  styleUrl: './tech.component.css',
+  styleUrls: ['./tech.component.css', './tech.responsive.component.css'],
 })
 export class TechComponent implements OnInit {
   @Input()
   tools: string[] = [];
   @Input()
-
   ngOnInit(): void {}
 }

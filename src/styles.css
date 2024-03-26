@@ -1,8 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI';
 }
 
+.title {
+  & h2 {
+    color: white;
+    font-size: 75px;
+    margin: 30px auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    & h2 {
+      font-size: 55px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .title {
+    & h2 {
+      font-size: 35px;
+    }
+  }
+}

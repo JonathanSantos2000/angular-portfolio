@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TechComponent } from '../tech/tech.component';
+import { TechComponent } from './tech/tech.component';
 
 @Component({
   selector: 'app-card-works',
@@ -13,8 +13,12 @@ import { TechComponent } from '../tech/tech.component';
 })
 export class CardWorksComponent implements OnInit {
   showMoreConteiner: boolean = false;
+  showMoreLeitura: boolean = false;
+  showMoreScore: boolean = false;
   showMoreMaridao: boolean = false;
   btnShow: string = 'Mostrar Mais';
+  leituraTxt: string = 'Ler Mais';
+  scoreTxt: string = 'Ler Mais';
   maridaoTxt: string = 'Ler Mais';
 
   constructor() {}
@@ -31,13 +35,20 @@ export class CardWorksComponent implements OnInit {
     }
   }
 
-  show_more_maridao() {
-    if (this.showMoreMaridao == false) {
-      this.showMoreMaridao = true;
-      this.maridaoTxt = 'Ler Menos';
-    } else {
-      this.showMoreMaridao = false;
-      this.maridaoTxt = 'Ler Mais';
+  show_more_txt(how: string) {
+    switch (how) {
+      case 'maridao':
+        this.showMoreMaridao = !this.showMoreMaridao;
+        this.maridaoTxt = this.showMoreMaridao ? 'Ler Menos' : 'Ler Mais';
+        break;
+      case 'score':
+        this.showMoreScore = !this.showMoreScore;
+        this.scoreTxt = this.showMoreScore ? 'Ler Menos' : 'Ler Mais';
+        break;
+      case 'leitura':
+        this.showMoreLeitura = !this.showMoreLeitura;
+        this.leituraTxt = this.showMoreLeitura ? 'Ler Menos' : 'Ler Mais';
+        break;
     }
   }
 }

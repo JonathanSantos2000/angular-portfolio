@@ -1,18 +1,7 @@
 .conteiner__card-works {
   background-color: #000;
   width: 100%;
-
   padding: 100px 100px;
-
-  & .card-works__title {
-    & h2 {
-      color: white;
-      font-size: 75px;
-      width: 1130px;
-      margin: 30px auto;
-      text-align: center;
-    }
-  }
 
   & .card-works {
     overflow: hidden;
@@ -53,8 +42,16 @@
             overflow: hidden;
           }
 
+          & .leituraClass {
+            height: auto;
+          }
+
+          & .scoreClass {
+            height: auto;
+          }
+
           & .maridaoClass {
-            height: 300px;
+            height: auto;
           }
 
           & .read-more {
@@ -63,6 +60,12 @@
             color: #5858de;
             font-size: 16px;
             cursor: pointer;
+            width: 100%;
+          }
+
+          & .show_less {
+            display: none;
+            text-align: center;
           }
 
           & .card-works__button {
@@ -82,20 +85,38 @@
               border-radius: 30px;
               transition: .4s;
             }
+
+
           }
         }
 
 
       }
 
+      & .card-works__card-leitura {
+        height: auto;
+      }
+
+      & .card-works__card-score {
+        height: auto;
+      }
+
       & .card-works__card-maridao {
-        height: 800px;
+        height: auto;
       }
     }
   }
 
   & .card-works__show-more {
     height: auto;
+  }
+
+  & .card-works__leitura {
+    height: 690px;
+  }
+
+  & .card-works__score {
+    height: 770px;
   }
 
   & .card-works__maridao {

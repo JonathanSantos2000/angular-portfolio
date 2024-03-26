@@ -1,10 +1,25 @@
-@media screen and (max-width: 900px) {
-  .title>h2 {
-    width: 100%;
-    font-size: 55px;
+@media screen and (max-width: 1280px) {
+  .conteiner__card-certificate {
+    padding: 100px 30px;
   }
+}
 
-  .card>img {
-    width: 100%;
+@media screen and (max-width: 900px) {
+  .conteiner__card-certificate {
+    padding: 100px 10px;
+
+    & .box {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .conteiner__card-certificate {
+    padding: 100px 0;
+
+    & .box {
+      grid-template-columns: 1fr;
+    }
   }
 }

@@ -1,0 +1,10 @@
+@media screen and (max-width: 1280px) {
+  .useTech {
+    flex-wrap: wrap;
+    & .tools {
+      & img {
+        width: 2rem;
+      }
+    }
+  }
+}

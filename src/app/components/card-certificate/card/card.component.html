@@ -1,0 +1,12 @@
+<div class="card" [class.card_big]="show">
+  <img id="certificado" src="{{ urlImg }}" alt="{{ title }}" />
+  <h5>{{ title }}</h5>
+  <div class="pra">
+    <p [class.big]="show">
+      {{ Texto }}
+    </p>
+    <button class="read-more" (click)="show_more()">
+      {{ read }}
+    </button>
+  </div>
+</div>

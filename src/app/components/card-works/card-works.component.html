@@ -1,15 +1,20 @@
 <section id="works" class="conteiner__card-works">
-  <div class="card-works__title">
+  <div class="title">
     <h2>Principais Web Projetos</h2>
   </div>
 
   <div
     class="card-works"
     [class.card-works__show-more]="showMoreConteiner"
+    [class.card-works__leitura]="showMoreLeitura && !showMoreConteiner"
+    [class.card-works__score]="showMoreScore && !showMoreConteiner"
     [class.card-works__maridao]="showMoreMaridao && !showMoreConteiner"
   >
     <div class="card-works__box">
-      <div class="card-works__card">
+      <div
+        class="card-works__card"
+        [class.card-works__card-leitura]="showMoreLeitura"
+      >
         <img src="../../../assets/IMG/Projeto_lista_de Leitura.jpg" alt="" />
         <app-tech
           [tools]="[
@@ -21,11 +26,14 @@
         ></app-tech>
         <h5>Projeto lista de Leitura</h5>
         <div class="pra">
-          <p>
+          <p [class.leituraClass]="showMoreLeitura">
             Aplicação web responsiva utilizando PHP, CSS, Java Script e MySQL
             para criar uma plataforma de gerenciamento de livros, onde os
             usuários podem organizar suas leituras de forma mais eficiente(WIP)
           </p>
+          <button class="read-more show_less" (click)="show_more_txt('leitura')">
+            {{ leituraTxt }}
+          </button>
           <p class="card-works__button">
             <a
               class="button"
@@ -35,7 +43,10 @@
           </p>
         </div>
       </div>
-      <div class="card-works__card">
+      <div
+        class="card-works__card"
+        [class.card-works__card-score]="showMoreScore"
+      >
         <img src="../../../assets/IMG/Projeto_futebol_score.png" alt="" />
         <app-tech
           [tools]="[
@@ -46,13 +57,16 @@
         ></app-tech>
         <h5>Projeto Futebol Score</h5>
         <div class="pra">
-          <p>
+          <p [class.scoreClass]="showMoreScore">
             O Match Point Status é um projeto web dedicado ao acompanhamento de
             diversas ligas de futebol. Desenvolvido como uma demonstração das
             minhas habilidades em PHP, CSS e JavaScript, o site utiliza a API
             fornecida pelo .football-data.org para obter informações em tempo
             quase sobre partidas, pontuações e estatísticas de jogadores.
           </p>
+          <button class="read-more show_less" (click)="show_more_txt('score')">
+            {{ scoreTxt }}
+          </button>
           <p class="card-works__button">
             <a
               class="button"
@@ -89,7 +103,7 @@
             Preparação para o lançamento em breve, com espaço para sugestões e
             ideias dos usuários.
           </p>
-          <button class="read-more" (click)="show_more_maridao()">
+          <button class="read-more" (click)="show_more_txt('maridao')">
             {{ maridaoTxt }}
           </button>
           <p class="card-works__button">
@@ -113,9 +127,9 @@
         <h5>Projeto #4</h5>
         <div class="pra">
           <p>Esperando seu Contato</p>
-          <p class="card-works__button">
+<!--           <p class="card-works__button">
             <a class="button" href="#">GitHub </a>
-          </p>
+          </p> -->
         </div>
       </div>
       <div class="card-works__card">
@@ -123,9 +137,9 @@
         <h5>Projeto #5</h5>
         <div class="pra">
           <p>Esperando seu Contato</p>
-          <p class="card-works__button">
+<!--           <p class="card-works__button">
             <a class="button" href="#">GitHub </a>
-          </p>
+          </p> -->
         </div>
       </div>
       <div class="card-works__card">
@@ -133,9 +147,9 @@
         <h5>Projeto #6</h5>
         <div class="pra">
           <p>Esperando seu Contato</p>
-          <p class="card-works__button">
+<!--           <p class="card-works__button">
             <a class="button" href="#">GitHub </a>
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
